@@ -1,0 +1,1 @@
+<img class="absolute select-none pointer-events-none" src="./images/stripe-pattern.svg" alt="stripes" width="40%" draggable="false" />

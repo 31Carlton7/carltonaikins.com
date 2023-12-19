@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	font-family: 'DM Sans Variable', sans-serif;
+	background-color: #25262d;
+}
