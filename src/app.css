@@ -1,8 +1,13 @@
+@import './prism.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+section,
 body {
 	font-family: 'DM Sans Variable', sans-serif;
 	background-color: #25262d;
+	line-height: 1.75rem;
+	color: white;
 }
