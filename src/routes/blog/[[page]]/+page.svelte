@@ -21,7 +21,7 @@
 		Writing on tech, business, and whatever else I feel like
 	</h1>
 
-	<div class="mt-16 sm:mt-20">
+	<div class="mt-16">
 		<PostsList posts={data.posts} />
 	</div>
 	<div class="flex items-center justify-between pt-16 pb-8">
@@ -58,7 +58,20 @@
 					><i class="fa-brands fa-twitter text-2xl m-4 text-color3" /></a
 				>
 			</div>
-			<div class="text-5xl italic font-thin text-color3">Blog</div>
+			<div class="flex flex-row justify-center items-center">
+				<a
+					href="https://www.carltonaikins.com/rss.xml"
+					target="_blank"
+					class="block py-2 pl-3 pr-4 md:border-0 md:p-0 mx-4"
+				>
+					<div
+						class="border rounded-full px-4 py-2 text-white hover:text-color4 border-color3 hover:bg-color3 transition ease-in-out"
+					>
+						RSS
+					</div>
+				</a>
+				<div class="text-5xl italic font-thin text-color3">Blog</div>
+			</div>
 		</div>
 	</footer>
 </div>

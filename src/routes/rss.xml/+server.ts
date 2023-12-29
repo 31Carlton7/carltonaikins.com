@@ -9,7 +9,7 @@ export const prerender = true;
 
 // update this to something more appropriate for your website
 const websiteDescription = `${name}'s blog`;
-const postsUrl = `${website}/blog`;
+const postsUrl = `${website}/blog/post`;
 
 /**
  * @type {import('@sveltejs/kit').RequestHandler}

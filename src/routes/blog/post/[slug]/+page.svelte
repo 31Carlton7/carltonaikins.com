@@ -86,10 +86,10 @@
 	<div class="w-full mx-auto overflow-x-hidden">
 		<article>
 			<header class="flex flex-col">
+				<PostDate class="text-sm sm:text-base" post={data.post} decorate collapsed />
 				<h1 class="mt-6 text-4xl font-bold tracking-tight text-white sm:text-5xl">
 					{data.post.title}
 				</h1>
-				<PostDate class="text-sm sm:text-base" post={data.post} decorate collapsed />
 			</header>
 
 			<!-- render the post -->
