@@ -1,5 +1,10 @@
 <script lang="ts">
 	import Footer from '$lib/Footer.svelte';
+
+	import sections from '$lib/images/sections-banner.png';
+	import clubology from '$lib/images/clubology-banner.png';
+	import charm from '$lib/images/charm-technologies-banner.png';
+	import elisha from '$lib/images/elisha-banner.png';
 </script>
 
 <div class="max-w-[1240px] mx-auto max-xl:mx-3 md:mt-0 md:mb-0 mt-12 mb-0 sm:mb-0">
@@ -9,7 +14,7 @@
 			target="_blank"
 			class="flex items-center justify-center bg-black md:rounded-3xl rounded-xl md:w-[65%] max-md:max-w-none max-md:p-8"
 		>
-			<img src="/images/sections-banner.png" alt="sections banner" draggable="false" />
+			<img src={sections} alt="sections banner" draggable="false" />
 		</a>
 	</div>
 	<div
@@ -19,21 +24,21 @@
 			<div
 				class="flex items-center justify-center bg-transparent md:rounded-3xl rounded-xl md:w-[65%] max-md:max-w-none"
 			>
-				<img src="/images/charm-technologies-banner.png" alt="charm technologies banner" />
+				<img src={charm} alt="charm technologies banner" />
 			</div>
 			<a
 				href="https://apps.apple.com/lc/app/elisha/id1608063814"
 				target="_blank"
 				class="flex items-center justify-center bg-transparent md:rounded-3xl rounded-xl md:w-[65%] max-md:max-w-none"
 			>
-				<img src="/images/elisha-banner.png" alt="elisha banner" />
+				<img src={elisha} alt="elisha banner" />
 			</a>
 		</div>
 		<a class="flex w-full" href="https://www.clubology.co" target="_blank">
 			<div
 				class="flex justify-start bg-transparent md:rounded-3xl rounded-xl md:w-[58%] max-md:max-w-none"
 			>
-				<img src="/images/clubology-banner.png" alt="sections banner" class="" />
+				<img src={clubology} alt="sections banner" class="" />
 			</div>
 		</a>
 	</div>

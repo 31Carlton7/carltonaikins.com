@@ -16,6 +16,6 @@
 		opacity: 0.03;
 		/* z-index: 2000; */
 		pointer-events: none;
-		background-image: url(/images/noise.gif);
+		background-image: url($lib/images/noise.gif);
 	}
 </style>
