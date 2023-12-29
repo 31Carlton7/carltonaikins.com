@@ -7,7 +7,7 @@
 
 <svelte:window bind:outerWidth />
 
-<div class="max-w-2xl mx-4 lg:max-w-none mt-48 md:mt-8">
+<div class="max-w-2xl mx-4 lg:max-w-none md:mt-8 my-12 md:mb-0">
 	<h2 class="mb-4 text-2xl tracking-tight font-extrabold text-start dark:text-white">Let's Talk</h2>
 	<p class="mb-4 font-light text-start text-gray-500 dark:text-gray-400">
 		Get in touch with me here or email me directly on <a
@@ -64,28 +64,27 @@
 	</form>
 </div>
 
-{#if outerWidth > 768}
+<!-- {#if outerWidth > 768}
 	<Footer pageName="Contact" />
 {:else}
-	<div class="md:hidden">
-		<footer class="bg-transparent py-10 w-full">
-			<div class="max-w-screen-xl flex flex-wrap justify-between items-center">
-				<div class="social-buttons">
-					<a href="https://www.github.com/31carlton7" target="_blank"
-						><i class="fa-brands fa-github text-2xl m-4 text-color3" /></a
-					>
-					<a href="https://www.linkedin.com/in/carltonaikins" target="_blank"
-						><i class="fa-brands fa-linkedin text-2xl m-4 text-color3" /></a
-					>
-					<a href="https://www.instagram.com/31carlton7" target="_blank"
-						><i class="fa-brands fa-instagram text-2xl m-4 text-color3" /></a
-					>
-					<a href="https://www.twitter.com/31carlton7" target="_blank"
-						><i class="fa-brands fa-twitter text-2xl m-4 text-color3" /></a
-					>
-				</div>
-				<div class="text-5xl italic font-thin text-color3">Contact</div>
-			</div>
-		</footer>
+{/if} -->
+<!-- <div class="md:hidden" /> -->
+<footer class="bg-transparent w-full">
+	<div class="max-w-screen-xl flex flex-wrap justify-between items-center">
+		<div class="social-buttons">
+			<a href="https://www.github.com/31carlton7" target="_blank"
+				><i class="fa-brands fa-github text-2xl m-4 text-color3" /></a
+			>
+			<a href="https://www.linkedin.com/in/carltonaikins" target="_blank"
+				><i class="fa-brands fa-linkedin text-2xl m-4 text-color3" /></a
+			>
+			<a href="https://www.instagram.com/31carlton7" target="_blank"
+				><i class="fa-brands fa-instagram text-2xl m-4 text-color3" /></a
+			>
+			<a href="https://www.twitter.com/31carlton7" target="_blank"
+				><i class="fa-brands fa-twitter text-2xl m-4 text-color3" /></a
+			>
+		</div>
+		<div class="text-5xl italic font-thin text-color3">Contact</div>
 	</div>
-{/if}
+</footer>

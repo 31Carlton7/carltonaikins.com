@@ -11,7 +11,7 @@
 	<StripePattern />
 	<Navbar />
 	<main
-		class="relative flex flex-col h-screen items-center justify-center place-items-center py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-32 lg:px-12"
+		class="relative flex flex-col md:h-screen items-center justify-center place-items-center py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-32 lg:px-12"
 	>
 		<slot />
 	</main>
