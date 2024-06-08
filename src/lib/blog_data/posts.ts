@@ -44,7 +44,7 @@ export const posts = Object.entries(import.meta.glob('/blog_posts/**/*.md', { ea
 			},
 
 			// get estimated reading time for the post
-			readingTime: readingTime(html.structuredText).text
+			readingTime: readingTime(html.structuredText, { wordsPerMinute: 265 }).text
 		};
 	})
 	// sort by date
