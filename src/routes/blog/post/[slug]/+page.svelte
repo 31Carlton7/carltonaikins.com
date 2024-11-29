@@ -15,7 +15,6 @@
 
 	// generated open-graph image for sharing on social media.
 	// see https://og-image.vercel.app/ for more options.
-	const ogImage = `https://www.carltonaikins.com/opengraphimage.png`;
 
 	const url = `${website}/${data.post.slug}`;
 
@@ -39,7 +38,6 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content={data.post.title} />
 	<meta property="og:description" content={data.post.preview.text} />
-	<meta property="og:image" content={ogImage} />
 
 	<!-- Twitter Meta Tags -->
 	<meta name="twitter:card" content="summary_large_image" />
@@ -47,7 +45,6 @@
 	<meta property="twitter:url" content={url} />
 	<meta name="twitter:title" content={data.post.title} />
 	<meta name="twitter:description" content={data.post.preview.text} />
-	<meta name="twitter:image" content={ogImage} />
 </svelte:head>
 
 <div class="h-full overflow-hidden">

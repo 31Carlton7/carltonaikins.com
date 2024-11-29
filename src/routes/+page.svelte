@@ -12,6 +12,36 @@
 	import Elisha from '$lib/Elisha.svelte';
 </script>
 
+<svelte:head>
+	<title>Carlton Aikins</title>
+	<meta
+		name="description"
+		content="Carlton Aikins is a software developer, entrepreneur, and student at the University of Southern California. Explore his portfolio, tech projects, and insights on software development and entrepreneurship. Stay updated on his journey in the tech world!"
+	/>
+	<meta name="author" content="Carlton Aikins" />
+
+	<!-- Facebook Meta Tags -->
+	<meta property="og:url" content="https://www.carltonaikins.com" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Carlton Aikins" />
+	<meta
+		property="og:description"
+		content="Carlton Aikins is a software developer, entrepreneur, and student at the University of Southern California. Explore his portfolio, tech projects, and insights on software development and entrepreneurship. Stay updated on his journey in the tech world!"
+	/>
+	<meta property="og:image" content="https://www.carltonaikins.com/opengraphimage.png" />
+
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta property="twitter:domain" content="https://www.carltonaikins.com" />
+	<meta property="twitter:url" content="https://www.carltonaikins.com" />
+	<meta name="twitter:title" content="Carlton Aikins" />
+	<meta
+		name="twitter:description"
+		content="Carlton Aikins is a software developer, entrepreneur, and student at the University of Southern California. Explore his portfolio, tech projects, and insights on software development and entrepreneurship. Stay updated on his journey in the tech world!"
+	/>
+	<meta name="twitter:image" content="https://www.carltonaikins.com/opengraphimage.png" />
+</svelte:head>
+
 <section class="bg-[#fff] md:h-full overflow-hidden">
 	<GrainEffect />
 	<StripePattern />
