@@ -3,7 +3,8 @@
 	import ArrowLeftIcon from '$lib/blog_components/ArrowLeftIcon.svelte';
 	import ArrowRightIcon from '$lib/blog_components/ArrowRightIcon.svelte';
 	import PostsList from '$lib/blog_components/PostsList.svelte';
-	import Footer from '$lib/Footer.svelte';
+	import Navbar from '$lib/Navbar.svelte';
+	import pfp from '$lib/images/pfp.png';
 
 	/** @type {import('./../$types').PageData} */
 	export let data: any;
@@ -16,14 +17,21 @@
 	<title>{name} | Posts</title>
 </svelte:head>
 
-<div class="flex flex-col flex-grow items-center mt-32">
-	<h1 class="text-2xl font-bold tracking-tight">
-		Writing on tech, business, and whatever else I feel like
-	</h1>
-
-	<div class="mt-16">
-		<PostsList posts={data.posts} />
+<div class="relative flex flex-col items-center justify-center flex-grow mt-32">
+	<a href="/" class="">
+		<img
+			class="select-none pointer-events-none w-[4rem]"
+			src={pfp}
+			alt="Carlton Aikins Profile"
+			draggable="false"
+		/>
+	</a>
+	<h1 class="my-4 text-2xl tracking-tight md:text-5xl">Welcome to my Blog</h1>
+	<h5 class="text-[#A2A2A2] font-light">Here are all my latest write ups.</h5>
+	<div class="w-full md:w-[60%] md:flex md:items-center md:justify-center">
+		<Navbar />
 	</div>
+	<PostsList posts={data.posts} />
 	<div class="flex items-center justify-between pt-16 pb-8">
 		{#if !isFirstPage}
 			<a href={`/blog/post/${data.page - 1}`} data-sveltekit-prefetch>
@@ -41,37 +49,4 @@
 			</a>
 		{/if}
 	</div>
-
-	<footer class="bg-transparent py-10 w-full z-[1000]">
-		<div class="max-w-screen-xl flex flex-wrap justify-between items-center">
-			<div class="social-buttons">
-				<a href="https://www.github.com/31carlton7" target="_blank"
-					><i class="fa-brands fa-github text-2xl m-4 text-color3" /></a
-				>
-				<a href="https://www.linkedin.com/in/carltonaikins" target="_blank"
-					><i class="fa-brands fa-linkedin text-2xl m-4 text-color3" /></a
-				>
-				<a href="https://www.instagram.com/31carlton7" target="_blank"
-					><i class="fa-brands fa-instagram text-2xl m-4 text-color3" /></a
-				>
-				<a href="https://www.twitter.com/31carlton7" target="_blank"
-					><i class="fa-brands fa-twitter text-2xl m-4 text-color3" /></a
-				>
-			</div>
-			<div class="flex flex-row justify-center items-center">
-				<a
-					href="https://www.carltonaikins.com/rss.xml"
-					target="_blank"
-					class="block py-2 pl-3 pr-4 md:border-0 md:p-0 mx-4"
-				>
-					<div
-						class="border rounded-full px-4 py-2 text-white hover:text-color4 border-color3 hover:bg-color3 transition ease-in-out"
-					>
-						RSS
-					</div>
-				</a>
-				<div class="text-5xl italic font-thin text-color3">Blog</div>
-			</div>
-		</div>
-	</footer>
 </div>

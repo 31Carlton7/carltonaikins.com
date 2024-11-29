@@ -10,21 +10,19 @@
 </script>
 
 <div
-	class={['relative order-first mb-3 flex text-zinc-400', _class].join(' ')}
+	class={['relative flex text-[#A2A2A2] w-full text-sm leading-[30px]', _class].join(' ')}
 	class:pl-3.5={decorate}
 >
-	{#if decorate}
-		<span class="absolute inset-y-0 left-0 flex items-center py-1" aria-hidden="true">
-			<span class="h-full w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500" />
-		</span>
-	{/if}
-	<div class="flex text-zinc-400" class:flex-col={!collapsed}>
-		<time datetime={post.date}>
-			{format(new Date(parseISO(post.date)), 'MMMM d, yyyy')}
-		</time>
-		{#if collapsed}
-			<span class="mx-1">•</span>
-		{/if}
-		<span>{post.readingTime}</span>
+	<div
+		class="bg-gradient-to-b from-[#E2E2E2] to-[#D1D1D1] rounded-[9px] bg-clip-border p-[1px]"
+		class:flex-col={!collapsed}
+	>
+		<div class="flex bg-[#F1F1F1] rounded-[8px] px-3">
+			<time datetime={post.date}>
+				{format(new Date(parseISO(post.date)), 'MMMM d, yyyy')}
+			</time>
+			&nbsp;&nbsp;
+			<span class="font-bold">{post.readingTime}</span>
+		</div>
 	</div>
 </div>

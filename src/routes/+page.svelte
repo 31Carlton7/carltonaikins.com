@@ -2,49 +2,156 @@
 	import GrainEffect from '$lib/GrainEffect.svelte';
 	import Navbar from '$lib/Navbar.svelte';
 	import StripePattern from '$lib/StripePattern.svelte';
-	import Footer from '$lib/Footer.svelte';
-	import Typewriter from 'svelte-typewriter';
 	import '../app.css';
 	import '@fontsource-variable/dm-sans';
+	import Pfp from '$lib/PFP.svelte';
+	import School from '$lib/School.svelte';
+	import Butterfly from '$lib/Butterfly.svelte';
+	import Google from '$lib/Google.svelte';
+	import Clubology from '$lib/Clubology.svelte';
+	import Elisha from '$lib/Elisha.svelte';
 </script>
 
-<Navbar />
-<section class="bg-[#25262D] md:h-full overflow-hidden">
+<section class="bg-[#fff] md:h-full overflow-hidden">
 	<GrainEffect />
 	<StripePattern />
 	<main
-		class="relative flex flex-col flex-wrap md:h-screen h-[80vh] items-center justify-center place-items-center md:py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-32 lg:px-12"
+		class="relative flex flex-col flex-wrap items-center justify-center max-w-screen-xl px-4 mx-auto mt-32 text-center place-items-center md:py-8 lg:py-32 lg:px-12 md:mt-0"
 	>
-		<Typewriter interval={100} unwriteInterval={100} cursor={false} mode="loopOnce">
-			<h1 class="font-black text-5xl mb-8">HI! 👋🏾</h1>
-			<h1 class="font-black text-5xl text-color3 mb-8">
-				I'M <span class="underline text-white">CARLTON AIKINS</span>
-			</h1>
-		</Typewriter>
-		<p class="font-semibold text-color3 text-2xl max-w-4xl">
-			I'm a <span class="text-color5">Software Developer</span>,
-			<span class="text-color5">Entrepreneur</span>, and <span class="text-color5">Student</span>
-			at the <span class="text-color2">University of Southern California 🌴</span> studying Computer
-			Science.
+		<!-- Header -->
+		<div
+			class="flex flex-wrap text-2xl md:text-5xl w-full md:w-[60%] items-center justify-center text-center leading-normal"
+		>
+			<h1 class="text-[#A2A2A2]">Hello there, I'm&nbsp;</h1>
+			<span><Pfp /></span>
+			<h1>&nbsp;Carlton Aikins</h1>
+			<h1 class="text-[#A2A2A2]">, I'm a&nbsp;</h1>
+			<h1>Computer Engineering 👨🏾‍💻</h1>
+			<h1 class="text-[#A2A2A2]">&nbsp;student at the&nbsp;</h1>
+			<span><School /></span>
+			<h1>&nbsp;University of Southern California</h1>
+		</div>
+
+		<!-- Navigation -->
+		<Navbar />
+
+		<!-- About Me -->
+		<p class="text-[#A2A2A2] font-light w-full md:w-1/2 my-20">
+			Software and entrepreneurship has been my passion for a while now. I&#39;ve always been
+			looking to make some sort of change in this world with the two. <br /><br />My creative flow
+			and ideation process is what differentiates me and helps me create great digital products and
+			experiences.<br /><br /> Take a look at my work!
 		</p>
+
+		<!-- Work Experiences -->
+		<div class="flex flex-col items-start justify-start w-full my-12 space-y-4 md:w-1/2">
+			<h1 class="text-2xl md:text-4xl">Work Experiences</h1>
+			<div class="flex w-full">
+				<Butterfly />
+				<div class="flex flex-col items-start justify-center flex-grow ml-4">
+					<div class="flex flex-wrap justify-between w-full md:flex-nowrap">
+						<h6 class="font-medium">Butterfly</h6>
+						<h6>Remote</h6>
+					</div>
+					<div class="flex flex-wrap justify-between flex-grow w-full">
+						<p class="text-[#A2A2A2] font-light">Software Engineer</p>
+						<p class="text-[#A2A2A2] font-light">Oct 2024 - Present</p>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="flex w-full">
+				<Tripalink />
+				<div class="flex flex-col items-start justify-center flex-grow ml-4">
+					<div class="flex flex-wrap justify-between w-full md:flex-nowrap">
+						<h6 class="font-medium">Tripalink (Nest Housing)</h6>
+						<h6>Los Angeles, CA</h6>
+					</div>
+					<div class="flex flex-wrap justify-between flex-grow w-full">
+						<p class="text-[#A2A2A2] font-light">SEO Engineer</p>
+						<p class="text-[#A2A2A2] font-light">Oct 2024 - Present</p>
+					</div>
+				</div>
+			</div> -->
+			<div class="flex w-full">
+				<Google />
+				<div class="flex flex-col items-start justify-center flex-grow ml-4">
+					<div class="flex flex-wrap justify-between w-full md:flex-nowrap">
+						<h6 class="font-medium">Google</h6>
+						<h6>Cambridge, MA</h6>
+					</div>
+					<div class="flex flex-wrap justify-between flex-grow w-full">
+						<p class="text-[#A2A2A2] font-light">Software Engineering Intern (STEP)</p>
+						<p class="text-[#A2A2A2] font-light">May 2024 - Aug 2024</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Projects -->
+		<div class="flex flex-col items-start justify-start w-full my-12 space-y-4 md:w-1/2">
+			<h1 class="text-4xl">Projects</h1>
+			<div class="grid grid-cols-2 space-x-3">
+				<div
+					class="flex flex-col bg-white space-y-3 border p-6 rounded-[20px] shadow-[0_3px_6px_0_rgba(128,128,128,0.19),0_10px_10px_0_rgba(255,255,255,0.17),0_23px_14px_0_rgba(255,255,255,0.10),0_41px_17px_0_rgba(255,255,255,0.03),0_0.5px_0.5px_0_rgba(255,255,255,0.16)]"
+				>
+					<div class="flex items-center">
+						<Elisha />
+						<h6 class="ml-4 font-medium text-start">Elisha</h6>
+					</div>
+					<p class="text-[#A2A2A2] font-light text-start">
+						Elisha was orignally a Bible reading and Church app. It will now transition to an AI
+						powered Bible exploration app.
+					</p>
+					<div class="flex space-x-2">
+						<button
+							class="p-[1px] font-medium text-white bg-gradient-to-b from-[#F8D0B0] to-[#B07749] rounded-[10px] w-1/2 inline-block shadow-sm"
+						>
+							<a href="https://github.com/31Carlton7/elisha">
+								<div
+									class="bg-gradient-to-b from-[#FFEEE1] to-[#DA9964] rounded-[9px] bg-clip-border p-[1px] before:inset-0"
+								>
+									<div class="bg-[#F8D0B0] rounded-[8px]">Website</div>
+								</div>
+							</a>
+						</button>
+						<button
+							class="p-[1px] font-medium text-white bg-gradient-to-b from-[#9B9B9B] to-[#696969] rounded-[10px] w-1/2 inline-block shadow-sm"
+						>
+							<a href="https://github.com/31Carlton7/elisha">
+								<div
+									class="bg-gradient-to-b from-[#C8C8C8] to-[#898989] rounded-[9px] bg-clip-border p-[1px] before:inset-0"
+								>
+									<div class="bg-[#9B9B9B] rounded-[8px]">GitHub</div>
+								</div>
+							</a>
+						</button>
+					</div>
+				</div>
+				<div
+					class="flex flex-col bg-white space-y-3 border p-6 rounded-[20px] shadow-[0_3px_6px_0_rgba(128,128,128,0.19),0_10px_10px_0_rgba(255,255,255,0.17),0_23px_14px_0_rgba(255,255,255,0.10),0_41px_17px_0_rgba(255,255,255,0.03),0_0.5px_0.5px_0_rgba(255,255,255,0.16)]"
+				>
+					<div class="flex items-center">
+						<Clubology />
+						<h6 class="ml-4 font-medium text-start">Clubology</h6>
+					</div>
+					<p class="text-[#A2A2A2] font-light text-start">
+						Clubology is an app for helping school clubs, student orgs, sports teams, and groups
+						manage their club.
+					</p>
+					<button
+						class="p-[1px] font-medium text-white bg-gradient-to-b from-[#1DDB9F] to-[#14936B] rounded-[10px] inline-block shadow-sm"
+					>
+						<a href="https://www.clubology.co/">
+							<div
+								class="bg-gradient-to-b from-[#8CE8CB] to-[#19BF8B] rounded-[9px] bg-clip-border p-[1px] before:inset-0"
+							>
+								<div class="bg-[#1DDB9F] rounded-[8px]">Website</div>
+							</div>
+						</a>
+					</button>
+				</div>
+			</div>
+		</div>
+		<h2 class="my-20 font-serif text-2xl italic tracking-tight">In God we trust 🙏🏾</h2>
 	</main>
 </section>
-<footer class="bg-transparent p-10 w-full md:absolute bottom-0 z-[1000]">
-	<div class="max-w-screen-xl flex flex-wrap justify-between items-center">
-		<div class="social-buttons">
-			<a href="https://www.github.com/31carlton7" target="_blank"
-				><i class="fa-brands fa-github text-2xl m-4 text-color3" /></a
-			>
-			<a href="https://www.linkedin.com/in/carltonaikins" target="_blank"
-				><i class="fa-brands fa-linkedin text-2xl m-4 text-color3" /></a
-			>
-			<a href="https://www.instagram.com/31carlton7" target="_blank"
-				><i class="fa-brands fa-instagram text-2xl m-4 text-color3" /></a
-			>
-			<a href="https://www.twitter.com/31carlton7" target="_blank"
-				><i class="fa-brands fa-twitter text-2xl m-4 text-color3" /></a
-			>
-		</div>
-		<div class="text-5xl italic font-thin text-color3 select-none" draggable="false">317</div>
-	</div>
-</footer>

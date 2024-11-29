@@ -51,11 +51,11 @@ README.md
 
 For the purposes of this tutorial we’re going to focus on the folder structure of the `/lib` directory (where all the magic happens).
 
-### Moving to `/src` folder
+### Moving to /src folder
 
 The first thing you can go ahead and do is create a folder under the `/lib` directory called `/src`. This is where all the functionality of the app will live. Other than `/src` the only thing you want inside of `/lib` is `main.dart`.
 
-## `/config` folder
+## /config folder
 
 The first folder we are going to create will be called `/config`. This folder is going to contain data that will determine the way our app behaves; Essentially general configuration for your app. You can think of it like the settings screen of an app but this time for your code.
 
@@ -217,7 +217,7 @@ This leaves our config folder looking like the following:
 
 Feel free to put other immutable files that hold values and functions here as well!
 
-## `/models` folder
+## /models folder
 
 This folder is, as the name suggests, a folder to house all of your models/classes. They will contain methods to convert JSON data to usable classes that you can utilize inside of your app as well.
 
@@ -508,7 +508,7 @@ class CbClubModel {
 
 You can always put in custom methods and values in here. I’d try to avoid this pattern in some cases and perform the functionality of files such as `intrContTxt()` inside of your custom backend API, unless you’re retrieving the information from another source. Try to make this file as simple and as consistent as possible whilst having the necessary functions.
 
-## `/services` folder
+## /services folder
 
 If your app requires any external API/internet/local API functionality, you want to put it in here. The services folder will be responsible for managing that.
 
@@ -688,7 +688,7 @@ extension AutoDisposeRefCache on AutoDisposeRef {
 }
 ```
 
-## `/ui` folder
+## /ui folder
 
 Now here’s where the real fun begins. We successfully separated our business logic from our screens through all the previous folders. Now we our going to create our screens and components.
 

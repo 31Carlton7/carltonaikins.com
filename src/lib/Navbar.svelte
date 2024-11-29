@@ -1,81 +1,68 @@
 <script lang="ts">
-	import Logo from './Logo.svelte';
 	import Menu from 'svelte-material-icons/Menu.svelte';
 	import Close from 'svelte-material-icons/Close.svelte';
 
 	$: outerWidth = 0;
-
-	export let menuOpen: boolean = false;
 </script>
 
 <svelte:window bind:outerWidth />
 
-<nav class="w-full top-0 left-0 absolute z-[10]">
-	<div class="md:flex md:flex-wrap items-center justify-between py-4 md:px-10 px-7">
-		<div class="flex items-center justify-center">
-			<Logo />
-		</div>
+<nav
+	class="flex flex-wrap items-center justify-center px-6 py-4 my-10 bg-white border rounded-full shadow-[0_3px_6px_0_rgba(128,128,128,0.19),0_10px_10px_0_rgba(255,255,255,0.17),0_23px_14px_0_rgba(255,255,255,0.10),0_41px_17px_0_rgba(255,255,255,0.03),0_0.5px_0.5px_0_rgba(255,255,255,0.16)]"
+>
+	<div class="">
 		<ul
-			class="bg-color4 md:bg-transparent md:ring-0 ring-1 ring-color3 md:flex md:items-center md:pb-0 pb-3 absolute md:static md:z-auto left-0 w-full md:w-auto transition-all duration-500 ease-in space-x-8 md:mt-4 {menuOpen
-				? 'top-0'
-				: 'top-[-460px]'}"
+			class="left-0 grid items-center justify-center grid-cols-3 gap-2 transition-all duration-500 ease-in md:flex md:space-x-8 md:bg-transparent md:ring-0 md:pb-0 md:static md:z-auto"
 		>
-			<li class="ml-8">
+			<!-- <li>
+				<a
+					href="/"
+					class="block text-[#A2A2A2] transition ease-in-out hover:text-[#8D8D8D] md:border-0 font-light"
+					>Home</a
+				>
+			</li> -->
+			<li>
 				<a
 					href="/blog"
-					class="block py-2 pl-3 pr-4 text-white hover:text-color3 md:border-0 md:p-0 transition ease-in-out"
+					class="block text-[#A2A2A2] transition ease-in-out hover:text-[#8D8D8D] md:border-0 font-light"
 					>Blog</a
 				>
 			</li>
 			<li>
 				<a
-					href="/projects"
-					class="block py-2 pl-3 pr-4 text-white hover:text-color3 md:border-0 md:p-0 transition ease-in-out"
-					>Projects</a
-				>
-			</li>
-			<li>
-				<a
-					href="/contact"
-					class="block py-2 pl-3 pr-4 text-white hover:text-color3 md:border-0 md:p-0 transition ease-in-out"
+					href="mailto:carlton@charmtechnologies.co"
+					class="block text-[#A2A2A2] transition ease-in-out hover:text-[#8D8D8D] md:border-0 font-light"
 					>Contact</a
 				>
 			</li>
 			<li>
-				{#if outerWidth <= 768}
-					<a
-						href="https://www.carltonaikins.com/resume.pdf"
-						target="_blank"
-						class="block py-2 pl-3 pr-4 md:border-0 md:p-0"
-					>
-						Resume
-					</a>
-				{:else}
-					<a
-						href="https://www.carltonaikins.com/resume.pdf"
-						target="_blank"
-						class="block py-2 pl-3 pr-4 md:border-0 md:p-0"
-					>
-						<div
-							class="border rounded-full px-4 py-2 text-white hover:text-color4 border-color3 hover:bg-color3 transition ease-in-out"
-						>
-							Resume
-						</div>
-					</a>
-				{/if}
+				<a
+					href="https://www.linkedin.com/in/carltonaikins"
+					class="block text-[#A2A2A2] transition ease-in-out hover:text-[#8D8D8D] md:border-0 font-light"
+					>LinkedIn</a
+				>
+			</li>
+			<li>
+				<a
+					href="https://www.github.com/31carlton7"
+					class="block text-[#A2A2A2] transition ease-in-out hover:text-[#8D8D8D] md:border-0 font-light"
+					>GitHub</a
+				>
+			</li>
+			<li>
+				<a
+					href="https://x.com/31Carlton7"
+					class="block text-[#A2A2A2] transition ease-in-out hover:text-[#8D8D8D] md:border-0 font-light"
+					>Twitter</a
+				>
+			</li>
+			<li>
+				<a
+					href="https://www.instagram.com/31carlton7"
+					class="block text-[#A2A2A2] transition ease-in-out hover:text-[#8D8D8D] md:border-0 font-light"
+					>Instagram</a
+				>
 			</li>
 		</ul>
-		<div class="absolute right-8 top-6 cursor-pointer md:hidden">
-			<button
-				on:click={() => (menuOpen = !menuOpen)}
-				class="transition duration-300 bg-none inline-block"
-			>
-				{#if menuOpen}
-					<Close class="text-white" />
-				{:else}
-					<Menu class="text-white" />
-				{/if}
-			</button>
-		</div>
 	</div>
 </nav>

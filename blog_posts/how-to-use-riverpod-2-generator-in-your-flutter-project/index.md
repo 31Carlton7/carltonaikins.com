@@ -3,7 +3,7 @@ title: How to use Riverpod 2.0 + Generator in your Flutter Project
 date: 2023-01-25
 ---
 
-Riverpod is the new standard for state management and reactive data caching in Flutter. The second version, _Riverpod 2.0,_ has been out for a while yet it's fairly hard to understand its concepts and the new ways of managing data in your app.
+Riverpod is the new standard for state management and reactive data caching in Flutter. The second version, Riverpod 2.0, has been out for a while yet it's fairly hard to understand its concepts and the new ways of managing data in your app.
 
 ## What we will learn
 

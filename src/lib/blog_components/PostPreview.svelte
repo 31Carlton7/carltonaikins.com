@@ -1,21 +1,33 @@
 <script lang="ts">
 	import Card from './Card.svelte';
-	import ArrowRightIcon from './ArrowRightIcon.svelte';
+	import PostDate from './PostDate.svelte';
 
 	export let post: any;
 </script>
 
-<Card href={`/blog/post/${post.slug}`}>
+<Card
+	href={`/blog/post/${post.slug}`}
+	class="bg-white rounded-[20px] p-4 md:p-6 shadow-[0_3px_6px_0_rgba(128,128,128,0.19),0_10px_10px_0_rgba(255,255,255,0.17),0_23px_14px_0_rgba(255,255,255,0.10),0_41px_17px_0_rgba(255,255,255,0.03),0_0.5px_0.5px_0_rgba(255,255,255,0.16)]"
+>
 	<slot slot="eyebrow" name="eyebrow" />
 	<slot slot="title">{post.title}</slot>
-	<div slot="description" class="prose text-zinc-400">
+	<div
+		slot="description"
+		class="prose text-[#A2A2A2] font-light leading-7 line-clamp-3 tracking-tight"
+	>
 		{@html post.preview.html}
 	</div>
-	<div slot="actions">
-		<div class="flex items-center text-color5">
-			<span class="text-sm font-medium">Read</span>
-			<ArrowRightIcon class="w-4 h-4 ml-1" />
-		</div>
+	<div slot="actions" class="items-end h-full md:flex">
+		<button
+			class="p-[1px] font-medium text-white bg-gradient-to-b from-[#1DA8DB] to-[#147493] rounded-[10px] inline-block shadow-sm"
+		>
+			<div
+				class="bg-gradient-to-b from-[#8CD7E8] to-[#199BBF] rounded-[9px] bg-clip-border p-[1px]"
+			>
+				<div class="bg-[#1ECEE6] rounded-[8px] px-3">Read</div>
+			</div>
+		</button>
+		<PostDate class="hidden md:block" {post} decorate />
 	</div>
 </Card>
 

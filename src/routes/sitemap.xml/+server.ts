@@ -7,7 +7,6 @@ import { website } from '$lib/info';
 
 export const prerender = true;
 
-// make sure this matches your post route
 const getPostUrl = (slug: any) => `${website}/post/${slug}`;
 
 /**

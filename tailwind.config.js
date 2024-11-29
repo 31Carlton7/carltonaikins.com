@@ -53,28 +53,28 @@ export default {
 			},
 			DEFAULT: {
 				css: {
-					'--tw-prose-body': theme('colors.white'),
-					'--tw-prose-headings': theme('colors.white'),
+					'--tw-prose-body': theme('colors.zinc.900'),
+					'--tw-prose-headings': theme('colors.zinc.900'),
 					'--tw-prose-links': theme('colors.sky.500'),
 					'--tw-prose-links-hover': theme('colors.sky.600'),
 					'--tw-prose-underline': theme('colors.sky.500 / 0.2'),
 					'--tw-prose-underline-hover': theme('colors.sky.500'),
 					'--tw-prose-bold': theme('colors.zinc.900'),
 					'--tw-prose-counters': theme('colors.zinc.900'),
-					'--tw-prose-bullets': '#7F829E',
+					'--tw-prose-bullets': theme('colors.zinc.900'),
 					'--tw-prose-hr': theme('colors.zinc.100'),
 					'--tw-prose-quote-borders': theme('colors.zinc.200'),
 					'--tw-prose-captions': theme('colors.zinc.400'),
-					'--tw-prose-code': theme('colors.zinc.300'),
-					'--tw-prose-code-bg': theme('colors.zinc.300 / 0.2'),
+					'--tw-prose-code': theme('colors.white'),
+					'--tw-prose-code-bg': 'rgb(0 0 0 / 0.7)',
 					'--tw-prose-pre-code': theme('colors.zinc.100'),
-					'--tw-prose-pre-bg': 'rgb(0 0 0 / 0.4)',
+					'--tw-prose-pre-bg': 'rgb(0 0 0 / 0.7)',
 					'--tw-prose-pre-border': theme('colors.zinc.200 / 0.1'),
 					'--tw-prose-th-borders': theme('colors.zinc.700'),
 					'--tw-prose-td-borders': theme('colors.zinc.800'),
 
-					'--tw-prose-invert-body': theme('colors.zinc.400'),
-					'--tw-prose-invert-headings': theme('colors.white'),
+					'--tw-prose-invert-body': theme('colors.zinc.900'),
+					'--tw-prose-invert-headings': theme('colors.zinc.900'),
 					'--tw-prose-invert-links': theme('colors.teal.400'),
 					'--tw-prose-invert-links-hover': theme('colors.teal.400'),
 					'--tw-prose-invert-underline': theme('colors.teal.400 / 0.3'),
@@ -164,8 +164,9 @@ export default {
 						fontWeight: theme('fontWeight.semibold'),
 						backgroundColor: 'var(--tw-prose-code-bg)',
 						borderRadius: theme('borderRadius.lg'),
-						paddingLeft: theme('spacing.1'),
-						paddingRight: theme('spacing.1')
+						'line-height': theme('lineHeight.4'),
+						padding: theme('spacing.1')
+						// paddingRight: theme('spacing.1')
 					},
 					'a code': {
 						color: 'inherit'
@@ -234,7 +235,7 @@ export default {
 						fontWeight: theme('fontWeight.medium'),
 						backgroundColor: 'var(--tw-prose-pre-bg)',
 						borderRadius: theme('borderRadius.3xl'),
-						padding: theme('spacing.8'),
+						padding: theme('spacing.6'),
 						overflowX: 'auto',
 						border: '1px solid',
 						borderColor: 'var(--tw-prose-pre-border)'
@@ -249,10 +250,10 @@ export default {
 						padding: 0
 					},
 					em: {
-						color: '#FFFFFF'
+						color: theme('colors.zinc.900')
 					},
 					strong: {
-						color: '#FFFFFF'
+						color: theme('colors.zinc.900')
 					},
 
 					// Horizontal rules

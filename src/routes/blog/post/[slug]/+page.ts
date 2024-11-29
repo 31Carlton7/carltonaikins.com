@@ -5,6 +5,7 @@
  * @type {import('@sveltejs/kit').PageLoad}
  */
 export async function load({ data }) {
+	console.log(data);
 	// load the markdown file based on slug
 	const component = data.post.isIndexFile
 		? // vite requires relative paths and explicit file extensions for dynamic imports

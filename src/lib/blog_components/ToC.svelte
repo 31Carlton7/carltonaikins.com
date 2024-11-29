@@ -55,7 +55,7 @@
 		<ul class="flex flex-col gap-2">
 			{#each headings as heading}
 				<li
-					class="pl-2 transition-colors border-color3 text-zinc-500 dark:text-zinc-600 hover:text-white"
+					class="pl-2 transition-colors border-color3 text-zinc-500 dark:text-zinc-600 hover:text-black"
 					class:active={activeHeading === heading}
 					style={`--depth: ${
 						// consider h1 and h2 at the same depth, as h1 will only be used for page title
@@ -71,7 +71,7 @@
 
 <style lang="postcss">
 	.active {
-		@apply font-medium text-white border-l-2 -ml-[2px];
+		@apply font-medium text-black border-l-2 -ml-[2px];
 	}
 
 	/* can't use dark: modifier in @apply */

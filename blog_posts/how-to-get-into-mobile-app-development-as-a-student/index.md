@@ -3,7 +3,7 @@ title: How to get into Mobile App Development as a Student
 date: 2024-07-29
 ---
 
-It’s safe to say that the mobile app take over is beginning, with 1,251 new apps are being released _daily_ on the Apple app store and 984 on the Google Play Store ([42Matters](https://42matters.com/google-play-statistics-and-trends)). It’s an effective way to get users familiar with your product offering and to make your business **successful**.
+It’s safe to say that the mobile app take over is beginning, with 1,251 new apps are being released daily on the Apple app store and 984 on the Google Play Store ([42Matters](https://42matters.com/google-play-statistics-and-trends)). It’s an effective way to get users familiar with your product offering and to make your business successful.
 
 As a student however, there’s a higher barrier of entry to get into this field of software engineering. _What coding languages work on phones and ipads? How long does it take to learn? How do I make money from it?_ These are all questions that I was wondering before I started.
 
