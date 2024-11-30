@@ -1,3 +1,5 @@
+![image](https://www.carltonaikins.com/thumbnail.png)
+
 # Personal Website
 
 Hi there! I'm Carlton, and this is my personal website built with Svelte.
