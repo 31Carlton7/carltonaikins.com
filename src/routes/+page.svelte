@@ -46,7 +46,7 @@
 	<GrainEffect />
 	<StripePattern />
 	<main
-		class="relative flex flex-col flex-wrap items-center justify-center max-w-screen-xl px-4 mx-auto mt-32 text-center place-items-center md:py-8 lg:py-32 lg:px-12 md:mt-0"
+		class="flex relative flex-col flex-wrap justify-center items-center place-items-center px-4 mx-auto mt-32 max-w-screen-xl text-center md:py-8 lg:py-32 lg:px-12 md:mt-0"
 	>
 		<!-- Header -->
 		<div
@@ -54,8 +54,8 @@
 		>
 			<h1 class="text-[#A2A2A2]">Hello there, I'm&nbsp;</h1>
 			<span><Pfp /></span>
-			<h1>&nbsp;Carlton Aikins</h1>
-			<h1 class="text-[#A2A2A2]">, I'm a&nbsp;</h1>
+			<h1>&nbsp;Carlton Aikins,</h1>
+			<h1 class="text-[#A2A2A2]">&nbsp;I'm a&nbsp;</h1>
 			<h1>Computer Engineering 👨🏾‍💻</h1>
 			<h1 class="text-[#A2A2A2]">&nbsp;student at the&nbsp;</h1>
 			<span><School /></span>
@@ -74,16 +74,16 @@
 		</p>
 
 		<!-- Work Experiences -->
-		<div class="flex flex-col items-start justify-start w-full my-12 space-y-4 md:w-1/2">
+		<div class="flex flex-col justify-start items-start my-12 space-y-4 w-full md:w-1/2">
 			<h1 class="text-2xl md:text-4xl">Work Experiences</h1>
 			<div class="flex w-full">
 				<Butterfly />
-				<div class="flex flex-col items-start justify-center flex-grow ml-4">
+				<div class="flex flex-col flex-grow justify-center items-start ml-4">
 					<div class="flex flex-wrap justify-between w-full md:flex-nowrap">
 						<h6 class="font-medium">Butterfly</h6>
 						<h6>Remote</h6>
 					</div>
-					<div class="flex flex-wrap justify-between flex-grow w-full">
+					<div class="flex flex-wrap flex-grow justify-between w-full">
 						<p class="text-[#A2A2A2] font-light">Software Engineer</p>
 						<p class="text-[#A2A2A2] font-light">Oct 2024 - Present</p>
 					</div>
@@ -91,12 +91,12 @@
 			</div>
 			<!-- <div class="flex w-full">
 				<Tripalink />
-				<div class="flex flex-col items-start justify-center flex-grow ml-4">
+				<div class="flex flex-col flex-grow justify-center items-start ml-4">
 					<div class="flex flex-wrap justify-between w-full md:flex-nowrap">
 						<h6 class="font-medium">Tripalink (Nest Housing)</h6>
 						<h6>Los Angeles, CA</h6>
 					</div>
-					<div class="flex flex-wrap justify-between flex-grow w-full">
+					<div class="flex flex-wrap flex-grow justify-between w-full">
 						<p class="text-[#A2A2A2] font-light">SEO Engineer</p>
 						<p class="text-[#A2A2A2] font-light">Oct 2024 - Present</p>
 					</div>
@@ -104,12 +104,12 @@
 			</div> -->
 			<div class="flex w-full">
 				<Google />
-				<div class="flex flex-col items-start justify-center flex-grow ml-4">
+				<div class="flex flex-col flex-grow justify-center items-start ml-4">
 					<div class="flex flex-wrap justify-between w-full md:flex-nowrap">
 						<h6 class="font-medium">Google</h6>
 						<h6>Cambridge, MA</h6>
 					</div>
-					<div class="flex flex-wrap justify-between flex-grow w-full">
+					<div class="flex flex-wrap flex-grow justify-between w-full">
 						<p class="text-[#A2A2A2] font-light">Software Engineering Intern (STEP)</p>
 						<p class="text-[#A2A2A2] font-light">May 2024 - Aug 2024</p>
 					</div>
@@ -118,7 +118,7 @@
 		</div>
 
 		<!-- Projects -->
-		<div class="flex flex-col items-start justify-start w-full my-12 space-y-4 md:w-1/2">
+		<div class="flex flex-col justify-start items-start my-12 space-y-4 w-full md:w-1/2">
 			<h1 class="text-4xl">Projects</h1>
 			<div class="grid grid-cols-2 space-x-3">
 				<div
