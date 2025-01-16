@@ -7,7 +7,7 @@
 
 <Card
 	href={`/blog/post/${post.slug}`}
-	class="bg-white rounded-[20px] p-4 md:p-6 shadow-[0_3px_6px_0_rgba(128,128,128,0.19),0_10px_10px_0_rgba(255,255,255,0.17),0_23px_14px_0_rgba(255,255,255,0.10),0_41px_17px_0_rgba(255,255,255,0.03),0_0.5px_0.5px_0_rgba(255,255,255,0.16)]"
+	class="bg-white rounded-[20px] p-4 md:p-6 main-site-shadow-border main-site-hover"
 >
 	<slot slot="eyebrow" name="eyebrow" />
 	<slot slot="title">{post.title}</slot>

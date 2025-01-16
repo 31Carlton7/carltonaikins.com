@@ -10,6 +10,7 @@
 	import Google from '$lib/Google.svelte';
 	import Clubology from '$lib/Clubology.svelte';
 	import Elisha from '$lib/Elisha.svelte';
+	import Tripalink from '$lib/Tripalink.svelte';
 </script>
 
 <svelte:head>
@@ -50,79 +51,48 @@
 	>
 		<!-- Header -->
 		<div
-			class="flex flex-wrap text-2xl md:text-5xl w-full md:w-[60%] items-center justify-center text-center leading-normal"
+			class="flex flex-col justify-center items-center space-y-2 w-full text-2xl text-center md:text-4xl motion-preset-blur-up"
 		>
-			<h1 class="text-[#A2A2A2]">Hello there, I'm&nbsp;</h1>
-			<span><Pfp /></span>
-			<h1>&nbsp;Carlton Aikins,</h1>
-			<h1 class="text-[#A2A2A2]">&nbsp;I'm a&nbsp;</h1>
-			<h1>Computer Engineering 👨🏾‍💻</h1>
-			<h1 class="text-[#A2A2A2]">&nbsp;student at the&nbsp;</h1>
-			<span><School /></span>
-			<h1>&nbsp;University of Southern California</h1>
+			<div class="flex">
+				<h1 class="text-[#A2A2A2]">hi, i'm&nbsp;</h1>
+				<span><Pfp /></span>
+				<h1>&nbsp;carlton aikins,</h1>
+				<h1 class="text-[#A2A2A2]">&nbsp;i'm a&nbsp;</h1>
+			</div>
+			<div class="flex">
+				<h1>computer engineering 👨🏾‍💻</h1>
+				<h1 class="text-[#A2A2A2]">&nbsp;student at the&nbsp;</h1>
+			</div>
+			<div class="flex">
+				<span><School /></span>
+				<h1>&nbsp;university of southern california</h1>
+			</div>
 		</div>
 
 		<!-- Navigation -->
 		<Navbar />
 
 		<!-- About Me -->
-		<p class="text-[#A2A2A2] font-light w-full md:w-1/2 my-20">
-			Software and entrepreneurship has been my passion for a while now. I&#39;ve always been
-			looking to make some sort of change in this world with the two. <br /><br />My creative flow
-			and ideation process is what differentiates me and helps me create great digital products and
-			experiences.<br /><br /> Take a look at my work!
+		<p class="text-[#A2A2A2] font-light w-full md:w-1/2 my-20 motion-preset-blur-up">
+			coding and entrepreneurship are two passions of mine. been at the grind for a few years now,
+			and looking forward to the next few. <br /> <br /> currently speeding up the app store
+			deployment process with AI @
+			<a
+				href="http://www.storeshotai.com"
+				class="text-blue-500"
+				target="_blank"
+				rel="noopener noreferrer">storeshot</a
+			>
 		</p>
 
-		<!-- Work Experiences -->
-		<div class="flex flex-col justify-start items-start my-12 space-y-4 w-full md:w-1/2">
-			<h1 class="text-2xl md:text-4xl">Work Experiences</h1>
-			<div class="flex w-full">
-				<Butterfly />
-				<div class="flex flex-col flex-grow justify-center items-start ml-4">
-					<div class="flex flex-wrap justify-between w-full md:flex-nowrap">
-						<h6 class="font-medium">Butterfly</h6>
-						<h6>Remote</h6>
-					</div>
-					<div class="flex flex-wrap flex-grow justify-between w-full">
-						<p class="text-[#A2A2A2] font-light">Software Engineer</p>
-						<p class="text-[#A2A2A2] font-light">Oct 2024 - Present</p>
-					</div>
-				</div>
-			</div>
-			<!-- <div class="flex w-full">
-				<Tripalink />
-				<div class="flex flex-col flex-grow justify-center items-start ml-4">
-					<div class="flex flex-wrap justify-between w-full md:flex-nowrap">
-						<h6 class="font-medium">Tripalink (Nest Housing)</h6>
-						<h6>Los Angeles, CA</h6>
-					</div>
-					<div class="flex flex-wrap flex-grow justify-between w-full">
-						<p class="text-[#A2A2A2] font-light">SEO Engineer</p>
-						<p class="text-[#A2A2A2] font-light">Oct 2024 - Present</p>
-					</div>
-				</div>
-			</div> -->
-			<div class="flex w-full">
-				<Google />
-				<div class="flex flex-col flex-grow justify-center items-start ml-4">
-					<div class="flex flex-wrap justify-between w-full md:flex-nowrap">
-						<h6 class="font-medium">Google</h6>
-						<h6>Cambridge, MA</h6>
-					</div>
-					<div class="flex flex-wrap flex-grow justify-between w-full">
-						<p class="text-[#A2A2A2] font-light">Software Engineering Intern (STEP)</p>
-						<p class="text-[#A2A2A2] font-light">May 2024 - Aug 2024</p>
-					</div>
-				</div>
-			</div>
-		</div>
-
 		<!-- Projects -->
-		<div class="flex flex-col justify-start items-start my-12 space-y-4 w-full md:w-1/2">
-			<h1 class="text-4xl">Projects</h1>
+		<div
+			class="flex flex-col justify-start items-start my-12 space-y-4 w-full md:w-1/2 motion-preset-blur-up"
+		>
+			<h1 class="text-3xl">projects</h1>
 			<div class="grid grid-cols-2 space-x-3">
 				<div
-					class="flex flex-col bg-white space-y-3 border p-6 rounded-[20px] shadow-[0_3px_6px_0_rgba(128,128,128,0.19),0_10px_10px_0_rgba(255,255,255,0.17),0_23px_14px_0_rgba(255,255,255,0.10),0_41px_17px_0_rgba(255,255,255,0.03),0_0.5px_0.5px_0_rgba(255,255,255,0.16)]"
+					class="flex flex-col bg-white space-y-3 p-6 rounded-[20px] main-site-shadow-border main-site-hover"
 				>
 					<div class="flex items-center">
 						<Elisha />
@@ -158,7 +128,7 @@
 					</div>
 				</div>
 				<div
-					class="flex flex-col bg-white space-y-3 border p-6 rounded-[20px] shadow-[0_3px_6px_0_rgba(128,128,128,0.19),0_10px_10px_0_rgba(255,255,255,0.17),0_23px_14px_0_rgba(255,255,255,0.10),0_41px_17px_0_rgba(255,255,255,0.03),0_0.5px_0.5px_0_rgba(255,255,255,0.16)]"
+					class="flex flex-col bg-white space-y-3 p-6 rounded-[20px] main-site-shadow-border main-site-hover"
 				>
 					<div class="flex items-center">
 						<Clubology />
@@ -182,6 +152,55 @@
 				</div>
 			</div>
 		</div>
-		<h2 class="my-20 font-serif text-2xl italic tracking-tight">In God we trust 🙏🏾</h2>
+
+		<!-- Work Experiences -->
+		<div
+			class="flex flex-col justify-start items-start my-12 space-y-4 w-full md:w-1/2 motion-preset-blur-up"
+		>
+			<h1 class="text-2xl md:text-3xl">work experiences</h1>
+			<a href="https://butterflyapp.co/" target="_blank" class="flex w-full main-site-hover">
+				<Butterfly />
+				<div class="flex flex-col flex-grow justify-center items-start ml-4">
+					<div class="flex flex-wrap justify-between w-full md:flex-nowrap">
+						<h6 class="font-medium">Butterfly</h6>
+						<h6>Remote</h6>
+					</div>
+					<div class="flex flex-wrap flex-grow justify-between w-full">
+						<p class="text-[#A2A2A2] font-light">Software Engineer</p>
+						<p class="text-[#A2A2A2] font-light">Oct 2024 - Present</p>
+					</div>
+				</div>
+			</a>
+			<a href="https://tripalink.com/" target="_blank" class="flex w-full main-site-hover">
+				<Tripalink />
+				<div class="flex flex-col flex-grow justify-center items-start ml-4">
+					<div class="flex flex-wrap justify-between w-full md:flex-nowrap">
+						<h6 class="font-medium">Tripalink (Nest Housing)</h6>
+						<h6>Los Angeles, CA</h6>
+					</div>
+					<div class="flex flex-wrap flex-grow justify-between w-full">
+						<p class="text-[#A2A2A2] font-light">Frontend Engineer</p>
+						<p class="text-[#A2A2A2] font-light">Oct 2024 - Present</p>
+					</div>
+				</div>
+			</a>
+			<a href="https://google.com/" target="_blank" class="flex w-full main-site-hover">
+				<Google />
+				<div class="flex flex-col flex-grow justify-center items-start ml-4">
+					<div class="flex flex-wrap justify-between w-full md:flex-nowrap">
+						<h6 class="font-medium">Google</h6>
+						<h6>Cambridge, MA</h6>
+					</div>
+					<div class="flex flex-wrap flex-grow justify-between w-full">
+						<p class="text-[#A2A2A2] font-light">Software Engineering Intern</p>
+						<p class="text-[#A2A2A2] font-light">May 2024 - Aug 2024</p>
+					</div>
+				</div>
+			</a>
+		</div>
+
+		<h2 class="my-20 font-serif text-2xl italic tracking-tight motion-preset-blur-up">
+			In God we trust 🙏🏾
+		</h2>
 	</main>
 </section>

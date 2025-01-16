@@ -47,17 +47,17 @@
 	<meta name="twitter:description" content={data.post.preview.text} />
 </svelte:head>
 
-<div class="h-full overflow-hidden">
+<div class="overflow-hidden h-full">
 	<GrainEffect />
 	<StripePattern />
 </div>
 <div class="relative mx-4 mt-16 md:mt-32 md:max-w-2xl lg:max-w-none">
-	<div class="w-full mx-auto">
+	<div class="mx-auto w-full">
 		<article>
 			<header class="flex flex-col items-center">
 				<a href="/" class="">
 					<img
-						class="select-none pointer-events-none w-[4rem]"
+						class="select-none pointer-events-none w-[3rem] rounded-xl"
 						src={pfp}
 						alt="Carlton Aikins Profile"
 						draggable="false"
@@ -87,7 +87,7 @@
 			</header>
 
 			<!-- render the post -->
-			<div class="max-w-2xl md:mx-[20rem] prose text-lg leading-10 -z-0 lg:max-w-none">
+			<div class="max-w-xl md:mx-[20rem] prose text-lg leading-10 -z-0 lg:max-w-none">
 				<svelte:component this={data.component} />
 			</div>
 		</article>

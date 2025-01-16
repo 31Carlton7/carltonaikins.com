@@ -2,9 +2,9 @@
 	import usc from '$lib/images/usc.png';
 </script>
 
-<a href="/" class="">
+<a href="https://usc.edu/" target="_blank" class="">
 	<img
-		class="select-none pointer-events-none w-[2rem] md:w-[4rem]"
+		class="select-none pointer-events-none w-[2rem] md:w-[2.5rem] rounded-xl"
 		src={usc}
 		alt="USC University of Southern California"
 		draggable="false"
