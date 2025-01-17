@@ -11,6 +11,7 @@
 	import Clubology from '$lib/Clubology.svelte';
 	import Elisha from '$lib/Elisha.svelte';
 	import Tripalink from '$lib/Tripalink.svelte';
+	import Storeshot from '$lib/Storeshot.svelte';
 </script>
 
 <svelte:head>
@@ -90,7 +91,30 @@
 			class="flex flex-col justify-start items-start my-12 space-y-4 w-full md:w-1/2 motion-preset-blur-up"
 		>
 			<h1 class="text-3xl">projects</h1>
-			<div class="grid grid-cols-2 space-x-3">
+			<div class="grid grid-cols-2 gap-4">
+				<div
+					class="flex flex-col bg-white space-y-3 p-6 rounded-[20px] main-site-shadow-border main-site-hover"
+				>
+					<div class="flex items-center">
+						<Storeshot />
+						<h6 class="ml-4 font-medium text-start">Storeshot</h6>
+					</div>
+					<p class="text-[#A2A2A2] font-light text-start">
+						Storeshot speeds up the app store / play store deployment process by generating app
+						store assets with AI.
+					</p>
+					<button
+						class="p-[1px] font-medium text-white bg-gradient-to-b from-[#00D6D6] to-[#00A3A3] rounded-[10px] inline-block shadow-sm"
+					>
+						<a href="https://www.storeshotai.com/">
+							<div
+								class="bg-gradient-to-b from-[#9bdaec] to-[#1993bf] rounded-[9px] bg-clip-border p-[1px] before:inset-0"
+							>
+								<div class="bg-[#00D6D6] rounded-[8px]">Website</div>
+							</div>
+						</a>
+					</button>
+				</div>
 				<div
 					class="flex flex-col bg-white space-y-3 p-6 rounded-[20px] main-site-shadow-border main-site-hover"
 				>
