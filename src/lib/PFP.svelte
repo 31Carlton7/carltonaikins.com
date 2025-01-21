@@ -4,7 +4,7 @@
 
 <a href="/" class="">
 	<img
-		class="select-none pointer-events-none w-[2rem] md:w-[2.5rem] rounded-xl"
+		class="select-none pointer-events-none w-[1rem] md:w-[2.5rem] rounded-xl"
 		src={pfp}
 		alt="Carlton Aikins Profile"
 		draggable="false"

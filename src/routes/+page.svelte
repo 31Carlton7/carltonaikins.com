@@ -54,17 +54,17 @@
 		<div
 			class="flex flex-col justify-center items-center space-y-2 w-full text-2xl text-center md:text-4xl motion-preset-blur-up"
 		>
-			<div class="flex">
+			<div class="flex flex-wrap justify-center items-center">
 				<h1 class="text-[#A2A2A2]">hi, i'm&nbsp;</h1>
 				<span><Pfp /></span>
 				<h1>&nbsp;carlton aikins,</h1>
 				<h1 class="text-[#A2A2A2]">&nbsp;i'm a&nbsp;</h1>
 			</div>
-			<div class="flex">
+			<div class="flex flex-wrap justify-center items-center">
 				<h1>computer engineering 👨🏾‍💻</h1>
 				<h1 class="text-[#A2A2A2]">&nbsp;student at the&nbsp;</h1>
 			</div>
-			<div class="flex">
+			<div class="flex flex-wrap justify-center items-center">
 				<span><School /></span>
 				<h1>&nbsp;university of southern california</h1>
 			</div>
@@ -91,7 +91,7 @@
 			class="flex flex-col justify-start items-start my-12 space-y-4 w-full md:w-1/2 motion-preset-blur-up"
 		>
 			<h1 class="text-3xl">projects</h1>
-			<div class="grid grid-cols-2 gap-4">
+			<div class="grid grid-cols-1 gap-4 md:grid-cols-2">
 				<div
 					class="flex flex-col bg-white space-y-3 p-6 rounded-[20px] main-site-shadow-border main-site-hover"
 				>
@@ -130,7 +130,7 @@
 						<button
 							class="p-[1px] font-medium text-white bg-gradient-to-b from-[#F8D0B0] to-[#B07749] rounded-[10px] w-1/2 inline-block shadow-sm"
 						>
-							<a href="https://github.com/31Carlton7/elisha">
+							<a href="https://github.com/31Carlton7/elisha" target="_blank">
 								<div
 									class="bg-gradient-to-b from-[#FFEEE1] to-[#DA9964] rounded-[9px] bg-clip-border p-[1px] before:inset-0"
 								>
@@ -141,7 +141,7 @@
 						<button
 							class="p-[1px] font-medium text-white bg-gradient-to-b from-[#9B9B9B] to-[#696969] rounded-[10px] w-1/2 inline-block shadow-sm"
 						>
-							<a href="https://github.com/31Carlton7/elisha">
+							<a href="https://github.com/31Carlton7/elisha" target="_blank">
 								<div
 									class="bg-gradient-to-b from-[#C8C8C8] to-[#898989] rounded-[9px] bg-clip-border p-[1px] before:inset-0"
 								>
@@ -152,7 +152,7 @@
 					</div>
 				</div>
 				<div
-					class="flex flex-col bg-white space-y-3 p-6 rounded-[20px] main-site-shadow-border main-site-hover"
+					class="flex flex-wrap flex-col bg-white space-y-3 p-6 rounded-[20px] main-site-shadow-border main-site-hover"
 				>
 					<div class="flex items-center">
 						<Clubology />
@@ -165,7 +165,7 @@
 					<button
 						class="p-[1px] font-medium text-white bg-gradient-to-b from-[#1DDB9F] to-[#14936B] rounded-[10px] inline-block shadow-sm"
 					>
-						<a href="https://www.clubology.co/">
+						<a href="https://www.clubology.co/" target="_blank">
 							<div
 								class="bg-gradient-to-b from-[#8CE8CB] to-[#19BF8B] rounded-[9px] bg-clip-border p-[1px] before:inset-0"
 							>
