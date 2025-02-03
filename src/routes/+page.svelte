@@ -182,19 +182,6 @@
 			class="flex flex-col justify-start items-start my-12 space-y-4 w-full md:w-1/2 motion-preset-blur-up"
 		>
 			<h1 class="text-2xl md:text-3xl">work experiences</h1>
-			<a href="https://butterflyapp.co/" target="_blank" class="flex w-full main-site-hover">
-				<Butterfly />
-				<div class="flex flex-col flex-grow justify-center items-start ml-4">
-					<div class="flex flex-wrap justify-between w-full md:flex-nowrap">
-						<h6 class="font-medium">Butterfly</h6>
-						<h6>Remote</h6>
-					</div>
-					<div class="flex flex-wrap flex-grow justify-between w-full">
-						<p class="text-[#A2A2A2] font-light">Software Engineer</p>
-						<p class="text-[#A2A2A2] font-light">Oct 2024 - Present</p>
-					</div>
-				</div>
-			</a>
 			<a href="https://tripalink.com/" target="_blank" class="flex w-full main-site-hover">
 				<Tripalink />
 				<div class="flex flex-col flex-grow justify-center items-start ml-4">
@@ -205,6 +192,19 @@
 					<div class="flex flex-wrap flex-grow justify-between w-full">
 						<p class="text-[#A2A2A2] font-light">Frontend Engineer</p>
 						<p class="text-[#A2A2A2] font-light">Oct 2024 - Present</p>
+					</div>
+				</div>
+			</a>
+			<a href="https://butterflyapp.co/" target="_blank" class="flex w-full main-site-hover">
+				<Butterfly />
+				<div class="flex flex-col flex-grow justify-center items-start ml-4">
+					<div class="flex flex-wrap justify-between w-full md:flex-nowrap">
+						<h6 class="font-medium">Butterfly</h6>
+						<h6>Remote</h6>
+					</div>
+					<div class="flex flex-wrap flex-grow justify-between w-full">
+						<p class="text-[#A2A2A2] font-light">Software Engineer</p>
+						<p class="text-[#A2A2A2] font-light">Oct 2024 - Jan 2025</p>
 					</div>
 				</div>
 			</a>
