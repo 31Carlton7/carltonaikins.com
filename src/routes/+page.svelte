@@ -12,6 +12,7 @@
 	import Elisha from '$lib/Elisha.svelte';
 	import Tripalink from '$lib/Tripalink.svelte';
 	import Storeshot from '$lib/Storeshot.svelte';
+	import Plynn from '$lib/Plynn.svelte';
 </script>
 
 <svelte:head>
@@ -92,6 +93,42 @@
 		>
 			<h1 class="text-3xl">projects</h1>
 			<div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+				<div
+					class="flex flex-col bg-white space-y-3 p-6 rounded-[20px] main-site-shadow-border main-site-hover"
+				>
+					<div class="flex items-center">
+						<Plynn />
+						<h6 class="ml-4 font-medium text-start">Plynn</h6>
+					</div>
+					<p class="text-[#A2A2A2] font-light text-start">
+						Plynn is a fully local dictation app for Mac. Hold a key, talk, and clean text lands
+						wherever your cursor is. Free and open source.
+					</p>
+					<div class="flex space-x-2">
+						<button
+							class="p-[1px] font-medium text-white bg-gradient-to-b from-[#5A5A5A] to-[#1F1F1F] rounded-[10px] w-1/2 inline-block shadow-sm"
+						>
+							<a href="https://plynn.app" target="_blank">
+								<div
+									class="bg-gradient-to-b from-[#8A8A8A] to-[#3A3A3A] rounded-[9px] bg-clip-border p-[1px] before:inset-0"
+								>
+									<div class="bg-[#5A5A5A] rounded-[8px]">Website</div>
+								</div>
+							</a>
+						</button>
+						<button
+							class="p-[1px] font-medium text-white bg-gradient-to-b from-[#9B9B9B] to-[#696969] rounded-[10px] w-1/2 inline-block shadow-sm"
+						>
+							<a href="https://github.com/31Carlton7/plynn" target="_blank">
+								<div
+									class="bg-gradient-to-b from-[#C8C8C8] to-[#898989] rounded-[9px] bg-clip-border p-[1px] before:inset-0"
+								>
+									<div class="bg-[#9B9B9B] rounded-[8px]">GitHub</div>
+								</div>
+							</a>
+						</button>
+					</div>
+				</div>
 				<div
 					class="flex flex-col bg-white space-y-3 p-6 rounded-[20px] main-site-shadow-border main-site-hover"
 				>
