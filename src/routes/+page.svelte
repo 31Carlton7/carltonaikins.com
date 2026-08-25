@@ -8,11 +8,41 @@
 	import School from '$lib/School.svelte';
 	import Butterfly from '$lib/Butterfly.svelte';
 	import Google from '$lib/Google.svelte';
-	import Clubology from '$lib/Clubology.svelte';
-	import Elisha from '$lib/Elisha.svelte';
 	import Tripalink from '$lib/Tripalink.svelte';
-	import Storeshot from '$lib/Storeshot.svelte';
-	import Plynn from '$lib/Plynn.svelte';
+	import plynnShot from '$lib/images/work/plynn.jpg';
+	import storeshotShot from '$lib/images/work/storeshot.jpg';
+	import clubologyShot from '$lib/images/work/clubology.jpg';
+
+	const work = [
+		{
+			name: 'plynn',
+			domain: 'plynn.app',
+			url: 'https://plynn.app',
+			blurb: 'fully local dictation for your Mac. free and open source.',
+			shot: plynnShot
+		},
+		{
+			name: 'storeshot',
+			domain: 'storeshotai.com',
+			url: 'https://www.storeshotai.com',
+			blurb: 'app store assets, generated with AI.',
+			shot: storeshotShot
+		},
+		{
+			name: 'clubology',
+			domain: 'clubology.co',
+			url: 'https://www.clubology.co',
+			blurb: 'club management for student orgs and teams.',
+			shot: clubologyShot
+		},
+		{
+			name: 'elisha',
+			domain: 'github.com/31Carlton7/elisha',
+			url: 'https://github.com/31Carlton7/elisha',
+			blurb: 'an open source Bible app, transitioning to AI powered exploration.',
+			shot: null
+		}
+	];
 </script>
 
 <svelte:head>
@@ -88,129 +118,35 @@
 		</p>
 
 		<!-- Projects -->
-		<div
-			class="flex flex-col justify-start items-start my-12 space-y-4 w-full md:w-1/2 motion-preset-blur-up"
-		>
+		<div class="flex flex-col justify-start items-start my-12 space-y-2 w-full motion-preset-blur-up">
 			<h1 class="text-3xl">projects</h1>
-			<div class="grid grid-cols-1 gap-4 md:grid-cols-2">
-				<div
-					class="flex flex-col bg-white space-y-3 p-6 rounded-[20px] main-site-shadow-border main-site-hover"
-				>
-					<div class="flex items-center">
-						<Plynn />
-						<h6 class="ml-4 font-medium text-start">Plynn</h6>
-					</div>
-					<p class="text-[#A2A2A2] font-light text-start">
-						Plynn is a fully local dictation app for Mac. Hold a key, talk, and clean text lands
-						wherever your cursor is. Free and open source.
-					</p>
-					<div class="flex space-x-2">
-						<button
-							class="p-[1px] font-medium text-white bg-gradient-to-b from-[#5A5A5A] to-[#1F1F1F] rounded-[10px] w-1/2 inline-block shadow-sm"
-						>
-							<a href="https://plynn.app" target="_blank">
-								<div
-									class="bg-gradient-to-b from-[#8A8A8A] to-[#3A3A3A] rounded-[9px] bg-clip-border p-[1px] before:inset-0"
-								>
-									<div class="bg-[#5A5A5A] rounded-[8px]">Website</div>
+			<p class="text-[#A2A2A2] font-light pb-4">things i've built and shipped.</p>
+			<div class="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 w-full">
+				{#each work as project}
+					<div class="flex flex-col">
+						<a href={project.url} target="_blank" class="block bg-[#EFEFEF] rounded-[20px] overflow-hidden h-[300px] pt-9 px-9 main-site-hover">
+							<div class="rounded-t-[10px] overflow-hidden shadow-[0_18px_50px_rgba(0,0,0,0.18)] bg-white">
+								<div class="flex items-center space-x-1.5 h-7 px-3.5 bg-[#F6F6F6] border-b border-black/5">
+									<span class="w-2.5 h-2.5 rounded-full bg-[#D6D6D6]"></span>
+									<span class="w-2.5 h-2.5 rounded-full bg-[#D6D6D6]"></span>
+									<span class="w-2.5 h-2.5 rounded-full bg-[#D6D6D6]"></span>
 								</div>
-							</a>
-						</button>
-						<button
-							class="p-[1px] font-medium text-white bg-gradient-to-b from-[#9B9B9B] to-[#696969] rounded-[10px] w-1/2 inline-block shadow-sm"
-						>
-							<a href="https://github.com/31Carlton7/plynn" target="_blank">
-								<div
-									class="bg-gradient-to-b from-[#C8C8C8] to-[#898989] rounded-[9px] bg-clip-border p-[1px] before:inset-0"
-								>
-									<div class="bg-[#9B9B9B] rounded-[8px]">GitHub</div>
-								</div>
-							</a>
-						</button>
-					</div>
-				</div>
-				<div
-					class="flex flex-col bg-white space-y-3 p-6 rounded-[20px] main-site-shadow-border main-site-hover"
-				>
-					<div class="flex items-center">
-						<Storeshot />
-						<h6 class="ml-4 font-medium text-start">Storeshot</h6>
-					</div>
-					<p class="text-[#A2A2A2] font-light text-start">
-						Storeshot speeds up the app store / play store deployment process by generating app
-						store assets with AI.
-					</p>
-					<button
-						class="p-[1px] font-medium text-white bg-gradient-to-b from-[#00D6D6] to-[#00A3A3] rounded-[10px] inline-block shadow-sm"
-					>
-						<a href="https://www.storeshotai.com/">
-							<div
-								class="bg-gradient-to-b from-[#9bdaec] to-[#1993bf] rounded-[9px] bg-clip-border p-[1px] before:inset-0"
-							>
-								<div class="bg-[#00D6D6] rounded-[8px]">Website</div>
+								{#if project.shot}
+									<img src={project.shot} alt="{project.name} landing page" class="w-full block select-none" draggable="false" />
+								{:else}
+									<div class="h-[300px] bg-[#FAFAFA] flex items-center justify-center">
+										<svg class="w-8 h-8 text-black/15" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" /></svg>
+									</div>
+								{/if}
 							</div>
 						</a>
-					</button>
-				</div>
-				<div
-					class="flex flex-col bg-white space-y-3 p-6 rounded-[20px] main-site-shadow-border main-site-hover"
-				>
-					<div class="flex items-center">
-						<Elisha />
-						<h6 class="ml-4 font-medium text-start">Elisha</h6>
+						<div class="flex items-baseline justify-between mt-4 w-full">
+							<h6 class="font-medium">{project.name}</h6>
+							<a href={project.url} target="_blank" class="text-[#FF6A3D] text-sm font-medium">{project.domain} ↗</a>
+						</div>
+						<p class="text-[#A2A2A2] font-light text-start mt-1">{project.blurb}</p>
 					</div>
-					<p class="text-[#A2A2A2] font-light text-start">
-						Elisha was orignally a Bible reading and Church app. It will now transition to an AI
-						powered Bible exploration app.
-					</p>
-					<div class="flex space-x-2">
-						<button
-							class="p-[1px] font-medium text-white bg-gradient-to-b from-[#F8D0B0] to-[#B07749] rounded-[10px] w-1/2 inline-block shadow-sm"
-						>
-							<a href="https://github.com/31Carlton7/elisha" target="_blank">
-								<div
-									class="bg-gradient-to-b from-[#FFEEE1] to-[#DA9964] rounded-[9px] bg-clip-border p-[1px] before:inset-0"
-								>
-									<div class="bg-[#F8D0B0] rounded-[8px]">Website</div>
-								</div>
-							</a>
-						</button>
-						<button
-							class="p-[1px] font-medium text-white bg-gradient-to-b from-[#9B9B9B] to-[#696969] rounded-[10px] w-1/2 inline-block shadow-sm"
-						>
-							<a href="https://github.com/31Carlton7/elisha" target="_blank">
-								<div
-									class="bg-gradient-to-b from-[#C8C8C8] to-[#898989] rounded-[9px] bg-clip-border p-[1px] before:inset-0"
-								>
-									<div class="bg-[#9B9B9B] rounded-[8px]">GitHub</div>
-								</div>
-							</a>
-						</button>
-					</div>
-				</div>
-				<div
-					class="flex flex-wrap flex-col bg-white space-y-3 p-6 rounded-[20px] main-site-shadow-border main-site-hover"
-				>
-					<div class="flex items-center">
-						<Clubology />
-						<h6 class="ml-4 font-medium text-start">Clubology</h6>
-					</div>
-					<p class="text-[#A2A2A2] font-light text-start">
-						Clubology is an app for helping school clubs, student orgs, sports teams, and groups
-						manage their club.
-					</p>
-					<button
-						class="p-[1px] font-medium text-white bg-gradient-to-b from-[#1DDB9F] to-[#14936B] rounded-[10px] inline-block shadow-sm"
-					>
-						<a href="https://www.clubology.co/" target="_blank">
-							<div
-								class="bg-gradient-to-b from-[#8CE8CB] to-[#19BF8B] rounded-[9px] bg-clip-border p-[1px] before:inset-0"
-							>
-								<div class="bg-[#1DDB9F] rounded-[8px]">Website</div>
-							</div>
-						</a>
-					</button>
-				</div>
+				{/each}
 			</div>
 		</div>
 
